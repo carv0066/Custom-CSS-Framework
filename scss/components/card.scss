@@ -1,0 +1,42 @@
+//Define styles for card
+
+.card {
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .card-img {
+      width: 100%;
+      display: block;
+  }
+
+  .card-content {
+      padding: 20px;
+
+      .card-title {
+          font-size: 24px;
+          margin-bottom: 10px;
+      }
+
+      .card-text {
+          font-size: 16px;
+          color: var(--gray);
+      }
+
+      .card-button {
+          background-color: var(--success);
+          color: var(--white);
+          border: none;
+          padding: 8px 16px;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+              background-color: darken(var(--success), 10%);
+          }
+      }
+  }
+}

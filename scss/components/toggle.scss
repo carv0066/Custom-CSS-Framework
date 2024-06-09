@@ -1,0 +1,35 @@
+// Styles for toggle
+
+.toggle-button {
+  margin: 20px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: var(--light-gray);
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+
+  .toggle-slider {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 16px;
+      height: 16px;
+      background-color: var(--success); // Example color for toggle slider
+      border-radius: 50%;
+      transition: left 0.3s ease;
+  }
+
+  input[type='checkbox']:checked + & .toggle-slider {
+      left: calc(100% - 2px);
+  }
+}
