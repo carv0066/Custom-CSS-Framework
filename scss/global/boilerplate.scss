@@ -1,0 +1,28 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    //padding and border are included in the element's total width and height, rather than being added to the dimensions.
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--light-gray);
+}

@@ -1,0 +1,23 @@
+//Font Styles
+
+:root {
+    --font-roboto: "Roboto", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-lato: "Lato", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-source-sans-pro: "Source Sans Pro", sans-serif;
+    --font-nunito: "Nunito", sans-serif;
+    --font-ubuntu: "Ubuntu", sans-serif;
+    --font-muli: "Muli", sans-serif;
+    --font-work-sans: "Work Sans", sans-serif;
+    --font-fira-sans: "Fira Sans", sans-serif;
+    --font-pt-sans: "PT Sans", sans-serif;
+    --font-quicksand: "Quicksand", sans-serif;
+    --font-oswald: "Oswald", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+    font-family: var(--font-roboto);
+}
