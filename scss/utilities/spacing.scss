@@ -1,0 +1,17 @@
+$spacing-unit: 1rem;
+
+@mixin margin($direction, $amount) {
+  @if $direction == all {
+    margin: $amount * $spacing-unit;
+  } @else {
+    margin-#{$direction}: $amount * $spacing-unit;
+  }
+}
+
+@mixin padding($direction, $amount) {
+  @if $direction == all {
+    padding: $amount * $spacing-unit;
+  } @else {
+    padding-#{$direction}: $amount * $spacing-unit;
+  }
+}
