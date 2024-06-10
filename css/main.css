@@ -1,0 +1,200 @@
+:root {
+  --font-roboto: "Roboto", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-source-sans-pro: "Source Sans Pro", sans-serif;
+  --font-nunito: "Nunito", sans-serif;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-muli: "Muli", sans-serif;
+  --font-work-sans: "Work Sans", sans-serif;
+  --font-fira-sans: "Fira Sans", sans-serif;
+  --font-pt-sans: "PT Sans", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light: hsl(0, 0%, 87%);
+  --black: hsl(0, 0%, 0%);
+  --gray: hsl(0, 0%, 45%);
+  --light-gray: hsl(0, 0%, 78%);
+  --danger: hsl(359, 74%, 54%);
+  --success: hsl(137, 63%, 33%);
+  --link: hsl(220, 76%, 55%);
+  --warning: hsl(47, 83%, 60%);
+  --info:hsl(176, 56%, 49%);
+  --purple: hsl(292, 86%, 41%);
+  --orange: hsl(28, 100%, 56%);
+  --aqua: hsl(195, 100%, 72%);
+  --navy: hsl(210, 100%, 12%);
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--light-gray);
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+h5 {
+  font-size: 14px;
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0px 25px;
+  max-width: 1110px;
+  margin: 0 auto 46px;
+}
+@media screen and (max-width: 1399px) {
+  .container .container {
+    padding: 0;
+  }
+}
+
+.header {
+  background-color: var(--purple);
+  padding: 20px;
+  text-align: center;
+}
+
+.toggle-button {
+  margin: 20px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: var(--light-gray);
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.toggle-label .toggle-slider {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--success);
+  border-radius: 50%;
+  transition: left 0.3s ease;
+}
+input[type=checkbox]:checked + .toggle-label .toggle-slider {
+  left: calc(100% - 2px);
+}
+
+.card {
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card .card-img {
+  width: 100%;
+  display: block;
+}
+.card .card-content {
+  padding: 20px;
+}
+.card .card-content .card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.card .card-content .card-text {
+  font-size: 16px;
+  color: var(--gray);
+}
+.card .card-content .card-button {
+  background-color: var(--success);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card .card-content .card-button:hover {
+  background-color: var(--success), 10%;
+}
+
+/*# sourceMappingURL=main.css.map */
